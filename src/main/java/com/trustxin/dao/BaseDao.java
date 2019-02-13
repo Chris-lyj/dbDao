@@ -85,7 +85,7 @@ public class BaseDao {
      * 分页配置，可自动产生分页
      *
      * @param page 页数（1开始）
-     * @param size 每页数据行数
+     * @param size 每页数据行数（最大限制为500行）
      * @return
      */
     public PageSort getPageSort(int page, int size) {
@@ -107,7 +107,7 @@ public class BaseDao {
      * 分页排序配置，可自动产生分页和排序
      *
      * @param page 页数（1开始）
-     * @param size 每页数据行数
+     * @param size 每页数据行数（最大限制为500行）
      * @param by   排序字段
      * @param sort 排序顺序  asc,desc
      * @return
